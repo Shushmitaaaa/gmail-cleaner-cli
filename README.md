@@ -58,12 +58,15 @@ If you change scopes or face permission errors, delete the `token.pickle` file i
 ```bash
 gmailcleaner clean --spam --delete
 ```
+<img width="522" height="171" alt="spammm" src="https://github.com/user-attachments/assets/3fc7e195-60bf-442f-85da-9299b064f539" />
 
 This command deletes all promotional emails
 
 ```bash
 gmailcleaner clean --promotions --delete
 ```
+<img width="624" height="177" alt="Screenshot 2025-10-24 163808" src="https://github.com/user-attachments/assets/299a6825-faf7-475e-b3ea-b24b094c636b" />
+
 
 Summarize unread promotional emails without deleting:
 
@@ -71,13 +74,7 @@ Summarize unread promotional emails without deleting:
 gmailcleaner clean --promotions --summarize
 ```
 
-### Empty Trash
-
-To empty your Gmail trash:
-
-```bash
-gmailcleaner empty-trash
-```
+<img width="1403" height="464" alt="promotion summarize" src="https://github.com/user-attachments/assets/ba33ffa9-12d9-400d-8843-c5448f656151" />
 
 ### Filters
 
