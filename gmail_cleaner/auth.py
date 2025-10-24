@@ -4,8 +4,10 @@ from google.auth.transport.requests import Request
 import pickle
 import os
 
-SCOPES = ['https://www.googleapis.com/auth/gmail.readonly',       
-    'https://www.googleapis.com/auth/gmail.modify',         
+SCOPES = ['https://www.googleapis.com/auth/gmail.readonly',
+    'https://www.googleapis.com/auth/gmail.modify',
+    'https://www.googleapis.com/auth/gmail.labels',
+    'https://mail.google.com/'        
      ]
 
 def gmail_authenticate():

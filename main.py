@@ -6,7 +6,7 @@ from gmail_cleaner.summarizer import summarize_emails
 from dotenv import load_dotenv
 from google import genai
 
-load_dotenv(".env_vars")  # specify the filename
+load_dotenv(".env_vars")  
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 
 client = genai.Client(api_key=gemini_api_key)
@@ -32,11 +32,11 @@ def clean(older_than, promotions, spam, unread, sender, summarize, delete, archi
     service = gmail_authenticate()
     query_parts = []
 
-    # Build Gmail search query dynamically
+  
     if promotions:
         query_parts.append("category:promotions")
     if spam:
-        query_parts.append("category:spam")
+        query_parts.append("label:Spam")
     if unread:
         query_parts.append("is:unread")
     if sender:
