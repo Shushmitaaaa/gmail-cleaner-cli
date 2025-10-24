@@ -17,6 +17,21 @@ A command-line tool to declutter your Gmail inbox by deleting or summarizing ema
 - OAuth 2.0 credentials (client ID and secret)
 - Gemini API key for summarization
 
+### Important Authentication Notice
+
+   -Google restricts apps that use Gmail API sensitive scopes (like deleting emails) for security reasons.
+      The included OAuth credentials will only work for test users you explicitly add in your own Google Cloud project.
+   
+   -If you want to use this tool on your own Gmail inbox:
+   
+   -Create your own Google Cloud project: https://console.cloud.google.com/
+   
+   -Enable the Gmail API, configure OAuth consent, and add yourself as a test user
+   
+   -Download your own credentials.json and .env_vars
+   
+   -Follow the rest of the setup in this README
+
 ## Installation
 
 1. Clone the repository:
